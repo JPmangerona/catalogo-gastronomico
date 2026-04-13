@@ -17,9 +17,9 @@ Obs: quando for adicionar um novo produto, se não for colocado imagem ele receb
 Siga os passos abaixo:
 
 1. No terminal, na raiz do projeto, execute:
-"""   
+```bash
 **docker-compose up -d --build**
-"""
+```
 3. Após o build, acesse a aplicação em seu navegador:
    **[http://localhost:8080](http://localhost:8080)**
 
@@ -32,9 +32,9 @@ O banco de dados é inicializado automaticamente com as tabelas necessárias e u
 
 ### Criando novos usuários
 Você pode criar novos usuários via CLI executando o comando abaixo (com o container rodando):
-"""
+```bash
 **docker exec -it mvc_app php bin/create-user.php novo@email.com sua-senha**
-"""
+```
 ## 🛠️ Tecnologias Utilizadas
 
 - **Backend**: PHP 8.2+
