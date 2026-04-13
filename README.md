@@ -1,6 +1,6 @@
 # Catálogo Gastronômico
 
-Este projeto é um catalogo menu para demonstrar os produtos de uma doceria, acabei evoluindo a aplicação para ser um site de demonstração dos produtos do meu tio.
+Este projeto é um Desafio Tecnico proposto pelo grupo BTZ fiz um catalogo menu para demonstrar os produtos de uma doceria, acabei evoluindo a aplicação para ser um site de demonstração dos produtos do meu tio.
 
 Na página inicial você pode já ver os produtos cadastrados.
 
