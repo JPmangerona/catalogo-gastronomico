@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: mvc_app
+    ports:
+      - '8080:80'
+    volumes:
+      - .:/var/www/html
+    command: bash -c "composer install --no-interaction && apache2-foreground"
+    environment:
+      DB_HOST: db
+      DB_NAME: catalogo-gastronomico
+      DB_USER: root
+      DB_PASSWORD: password
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  db:
+    image: mysql:8.0
+    container_name: mvc_db
+    restart: always
+    environment:
+      MYSQL_DATABASE: catalogo-gastronomico
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - db_data:/var/lib/mysql
+    networks:
+      - app-network
+
+volumes:
+  db_data:
+
+networks:
+  app-network:
+    driver: bridge

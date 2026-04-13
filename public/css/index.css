@@ -1,0 +1,119 @@
+.logo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: 'Barlow', sans-serif;
+}
+
+main {
+    height: 100vh;
+}
+
+.container-banner {
+    width: 100%;
+    height: 80%;
+    background-image: url("../img/banner-site.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-texto-banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+}
+
+.container-banner h1,
+.container-banner p {
+    color: #FFFFFF;
+}
+
+h2 {
+    text-align: center;
+    font-size: 48px;
+    margin: 20px 0px;
+    color: #EBC181;
+    font-weight: bold;
+}
+
+
+.container-doce,
+.container-salgado {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-doce-titulo,
+.container-salgado-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-doce-titulo h3,
+.container-salgado-titulo h3 {
+    font-size: 32px;
+    color: #EBC181;
+    text-align: center;
+    margin: 15px 0px 5px;
+}
+
+.container-doce-produtos,
+.container-salgado-produtos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container-produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: solid #EBC181 2px;
+    overflow: hidden;
+    margin: 10px;
+    width: 300px;
+    height: auto;
+}
+
+.container-foto {
+    width: 100%;
+}
+
+.container-produto img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.container-produto p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.container-produto p:nth-child(4) {
+    color: #9B8357;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.container-produto p:nth-child(2) {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ornaments {
+    width: 200px;
+}

@@ -1,0 +1,13 @@
+/vendor/
+composer.lock
+.env
+*.log
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Docker
+db_data/

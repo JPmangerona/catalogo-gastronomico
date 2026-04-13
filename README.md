@@ -1,0 +1,60 @@
+# Catálogo Gastronômico
+
+Este projeto é um catalogo menu para demonstrar os produtos de uma doceria, acabei evoluindo a aplicação para ser um site de demonstração dos produtos do meu tio.
+
+Na página inicial você pode já ver os produtos cadastrados.
+
+Para fazer o CRUD que foi solictado você deve colocar no navegador a rota "/admin" e fazer login com as credenciais abaixo:
+
+- **E-mail**: `teste@teste.com`
+- **Senha**: `123456`
+
+Obs: quando for adicionar um novo produto, se não for colocado imagem ele recebe a imagem padrão
+
+
+## Como Rodar o Projeto
+
+Siga os passos abaixo:
+
+1. No terminal, na raiz do projeto, execute:
+
+   docker-compose up -d --build
+  
+2. Após o build, acesse a aplicação em seu navegador:
+   **[http://localhost:8080](http://localhost:8080)**
+
+## Acesso ao Painel Admin
+
+O banco de dados é inicializado automaticamente com as tabelas necessárias e um usuário de teste.
+
+- **E-mail**: `teste@teste.com`
+- **Senha**: `123456`
+
+### Criando novos usuários
+Você pode criar novos usuários via CLI executando o comando abaixo (com o container rodando):
+
+docker exec -it mvc_app php bin/create-user.php novo@email.com sua-senha
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Backend**: PHP 8.2+
+- **Database**: MySQL 8.0
+- **Padrão de Projeto**: MVC (Model-View-Controller)
+- **Segurança**: 
+  - Hashing de senhas com `Argon2id`.
+  - Controle de sessão centralizado via Front Controller.
+  - Prevenção de SQL Injection com PDO Prepared Statements.
+- **Infraestrutura**: Docker & Docker Compose.
+
+---
+
+## 📂 Estrutura de Pastas
+
+- `public/`: Ponto de entrada (`index.php`) e arquivos estáticos (CSS, JS, Imagens).
+- `src/Controller/`: Lógica de controle das requisições.
+- `src/Model/`: Representação dos dados.
+- `src/Repository/`: Comunicação com o banco de dados.
+- `src/View/`: Templates HTML.
+- `config/`: Configuração de rotas dinâmicas.

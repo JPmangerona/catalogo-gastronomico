@@ -1,0 +1,185 @@
+.container-admin-banner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0px 10px;
+}
+
+.logo-admin {
+    width: 250px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.container-table {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.table-responsive {
+    width: 95%;
+    max-width: 1000px;
+    overflow-x: auto;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #EBC181;
+}
+
+table th {
+    padding: 11px 0 11px;
+    background-color: #EBC181;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    padding: 8px;
+}
+
+table tr {
+    border: 1px solid #ddd;
+}
+
+table td {
+    color: #000000;
+    font-size: 18px;
+    padding: 8px;
+}
+
+table th:nth-child(4),
+table td:nth-child(4) {
+    white-space: nowrap;
+}
+
+.container-admin-banner h1 {
+    margin-top: 40px;
+    font-size: 30px;
+    color: #EBC181;
+}
+
+.container-lista-produtos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto 0;
+}
+
+.container-lista {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid #EBC181 0.5px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 3px 0;
+}
+
+.container-lista h3 {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+table tbody tr td a,
+.botao-excluir,
+.botao-editar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 35px;
+    padding: 0 15px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: 0.7s;
+    border: none;
+    font-size: 18px;
+    font-family: inherit;
+}
+
+.botao-cadastrar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+
+table tbody tr td a:hover,
+.botao-cadastrar:hover,
+.botao-excluir:hover {
+    cursor: pointer;
+    filter: saturate(150%);
+}
+
+.botao-cadastrar {
+    background: #4bcf2d;
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: none;
+}
+
+
+.botao-editar {
+    background: #2d4dc2;
+    color: #FFFFFF;
+}
+
+.botao-excluir {
+    background: crimson;
+}
+
+.botao-logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #d13a3a;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s;
+}
+
+.botao-logout:hover {
+    background-color: #a82e2e;
+}
+
+@media (max-width: 768px) {
+    .botao-logout {
+        position: relative;
+        display: block;
+        top: 0;
+        right: 0;
+        margin: 15px auto 0;
+        text-align: center;
+        width: max-content;
+    }
+}

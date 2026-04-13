@@ -1,0 +1,19 @@
+{
+    "name": "joaop/catalogo-gastronomico",
+    "description": "CRUD de Produtos - Teste Técnico Grupo BTZ",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MVC\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "João Pedro",
+            "email": "joaopedromangerona@edu.unifil.br"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
