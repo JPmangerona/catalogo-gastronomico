@@ -32,6 +32,7 @@ O banco de dados é inicializado automaticamente com as tabelas necessárias e u
 
 ### Criando novos usuários
 Você pode criar novos usuários via CLI executando o comando abaixo (com o container rodando):
+
 """
    ** docker exec -it mvc_app php bin/create-user.php novo@email.com sua-senha **
 """
