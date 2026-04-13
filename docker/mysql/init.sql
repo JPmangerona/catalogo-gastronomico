@@ -1,7 +1,7 @@
 SET NAMES utf8mb4;
 
-CREATE DATABASE IF NOT EXISTS `catalogo-gastronomico` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE `catalogo-gastronomico`;
+CREATE DATABASE IF NOT EXISTS `catalogo_gastronomico` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE `catalogo_gastronomico`;
 
 CREATE TABLE IF NOT EXISTS usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,

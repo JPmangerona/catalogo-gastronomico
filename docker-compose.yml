@@ -11,7 +11,7 @@ services:
     command: bash -c "composer install --no-interaction && apache2-foreground"
     environment:
       DB_HOST: db
-      DB_NAME: catalogo-gastronomico
+      DB_NAME: catalogo_gastronomico
       DB_USER: root
       DB_PASSWORD: password
     depends_on:
@@ -24,7 +24,7 @@ services:
     container_name: mvc_db
     restart: always
     environment:
-      MYSQL_DATABASE: catalogo-gastronomico
+      MYSQL_DATABASE: catalogo_gastronomico
       MYSQL_ROOT_PASSWORD: password
     ports:
       - '3306:3306'
